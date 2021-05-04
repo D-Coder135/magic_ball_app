@@ -32,6 +32,17 @@ class Ball extends StatefulWidget {
 class _BallState extends State<Ball> {
   @override
   Widget build(BuildContext context) {
-    return Row();
+    return Row(
+      children: [
+        Expanded(
+          // ignore: deprecated_member_use
+          child: FlatButton(
+              onPressed: () {
+                print('I am pressed');
+              },
+              child: Image.asset('images/ball1.png')),
+        ),
+      ],
+    );
   }
 }
