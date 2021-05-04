@@ -30,6 +30,8 @@ class Ball extends StatefulWidget {
 }
 
 class _BallState extends State<Ball> {
+  int ballNumber = 0;
+
   @override
   Widget build(BuildContext context) {
     return Center(
