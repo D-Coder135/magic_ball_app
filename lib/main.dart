@@ -5,3 +5,12 @@ void main() => runApp(
         home: null,
       ),
     );
+
+class BallPage extends StatelessWidget {
+  const BallPage({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
