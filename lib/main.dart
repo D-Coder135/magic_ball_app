@@ -43,7 +43,9 @@ class _BallState extends State<Ball> {
             // ignore: deprecated_member_use
             child: FlatButton(
                 onPressed: () {
-                  ballNumber = Random().nextInt(5) + 1;
+                  setState(() {
+                    ballNumber = Random().nextInt(5) + 1;
+                  });
                   // print('ball $ballNumber');
                   // print('I am pressed');
                 },
