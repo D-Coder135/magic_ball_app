@@ -32,7 +32,7 @@ class Ball extends StatefulWidget {
 }
 
 class _BallState extends State<Ball> {
-  int ballNumber = 0;
+  int ballNumber = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class _BallState extends State<Ball> {
             // ignore: deprecated_member_use
             child: FlatButton(
                 onPressed: () {
-                  ballNumber = Random().nextInt(5);
+                  ballNumber = Random().nextInt(5) + 1;
                   // print('I am pressed');
                 },
                 child: Image.asset('images/ball$ballNumber.png')),
