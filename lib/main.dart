@@ -21,3 +21,17 @@ class BallPage extends StatelessWidget {
     );
   }
 }
+
+class Ball extends StatefulWidget {
+  const Ball({Key key}) : super(key: key);
+
+  @override
+  _BallState createState() => _BallState();
+}
+
+class _BallState extends State<Ball> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
