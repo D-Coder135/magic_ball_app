@@ -41,7 +41,7 @@ class _BallState extends State<Ball> {
             // ignore: deprecated_member_use
             child: FlatButton(
                 onPressed: () {
-                  print('I am pressed');
+                  // print('I am pressed');
                 },
                 child: Image.asset('images/ball$ballNumber.png')),
           ),
